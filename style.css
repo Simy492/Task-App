@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.page {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: #37474f;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+#myinput {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #64b5f6;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#myinput:focus {
+    border-color: #42a5f5;
+    box-shadow: 0 0 0 3px rgba(66, 165, 245, 0.2);
+}
+
+#mybutton {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #42a5f5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#mybutton:hover {
+    background-color: #1e88e5;
+}
+
+/* Estilo de tarea */
+#mytask {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff3e0;
+    border-left: 6px solid #ff7043;
+    padding: 14px;
+    margin-top: 15px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+#mytaskText {
+    flex: 1;
+    text-align: left;
+    font-size: 16px;
+    color: #37474f;
+}
+
+#mytaskDelete {
+    background-color: #66bb6a;
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+#mytaskDelete:hover {
+    background-color: #43a047;
+}
+
+#mytaskDelete i {
+    pointer-events: none;
+}
